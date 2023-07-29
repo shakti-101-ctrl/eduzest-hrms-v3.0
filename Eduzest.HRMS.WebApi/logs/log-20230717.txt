@@ -1,0 +1,8 @@
+[22:54:40 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[22:58:12 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:02:06 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:08:41 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:11:53 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:11:56 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:16:59 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - getbranch executed
+[23:16:59 INF] Eduzest.HRMS.Repository.Service.BranchRepository - Banda......

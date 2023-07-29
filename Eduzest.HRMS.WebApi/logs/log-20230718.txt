@@ -1,0 +1,86 @@
+
+[23:54:44 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[23:54:44 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[23:54:44 INF] Eduzest.HRMS.Repository.Service.BranchRepository - Banda......
+
+[23:54:46 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[23:54:46 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[23:54:46 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[23:55:04 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranchById,Status : Started,Controller : Branch]
+
+[23:55:04 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetBranchById() started *****
+
+
+[23:55:04 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- > Branch found
+
+
+[23:55:04 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- >GetBranchById() completed *****
+
+
+[23:55:04 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranchById,Status : Completed,Controller : Branch]
+
+[23:55:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : PostBranch,Status : Started,Controller : Branch]
+
+[23:55:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -->AddBranch() started *****
+
+
+[23:55:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >initialization started
+
+
+[23:55:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- > record added successfully
+
+
+[23:55:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > AddBranch() completed *****
+
+
+[23:55:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : PostBranch,Status : Completed,Controller : Branch]
+
+[23:55:42 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : PutBranch,Status : Started,Controller : Branch]
+
+[23:55:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > UpdateBranch() started *****
+
+
+[23:55:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >initialization started
+
+
+[23:55:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >updated successfully
+
+
+[23:55:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- >UpdateBranch() completed ****
+
+
+[23:55:42 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : PutBranch,Status : Completed,Controller : Branch]
+
+[23:55:54 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : DeleteBranch,Status : Started,Controller : Branch]
+
+[23:55:54 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- >DeleteBranch() started *****
+
+
+[23:55:54 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >initialization started
+
+
+[23:55:54 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >deleted successfully
+
+
+[23:55:54 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > DeleteBranch() completed *****
+
+
+[23:55:54 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : DeleteBranch,Status : Completed,Controller : Branch]

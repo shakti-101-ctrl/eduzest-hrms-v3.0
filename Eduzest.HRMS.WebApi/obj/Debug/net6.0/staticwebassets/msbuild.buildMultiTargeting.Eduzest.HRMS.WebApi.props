@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eduzest.HRMS.WebApi.props" />
+</Project>

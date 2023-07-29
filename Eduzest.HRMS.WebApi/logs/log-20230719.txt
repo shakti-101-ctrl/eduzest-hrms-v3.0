@@ -1,0 +1,618 @@
+
+[12:01:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[12:01:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[12:02:01 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[12:02:01 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[12:02:01 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[12:23:58 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[12:23:58 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[12:24:01 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[12:24:01 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[12:24:01 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[12:33:45 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[12:33:45 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[12:33:48 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[12:33:48 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[12:33:48 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[12:38:42 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : PostBranch,Status : Started,Controller : Branch]
+
+[12:38:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -->AddBranch() started *****
+
+
+[12:38:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- >initialization started
+
+
+[12:38:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branch -- > record added successfully
+
+
+[12:38:42 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > AddBranch() completed *****
+
+
+[12:38:42 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+[Action method : PostBranch,Status : Completed,Controller : Branch]
+
+[14:50:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[14:50:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[14:50:38 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[14:50:38 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[14:50:38 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:14:35 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:14:35 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:14:37 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:14:37 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:14:37 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:14:53 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:14:53 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:14:53 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:14:53 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:14:53 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:39:54 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:39:54 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:39:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:39:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:39:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:40:34 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:40:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:40:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:40:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:40:34 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:41:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:41:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:41:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:41:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:41:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[15:50:26 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[15:50:26 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[15:50:26 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[15:50:26 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[15:50:26 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:05:50 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:05:50 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:05:55 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:05:55 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:05:55 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:08:08 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:08:08 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:08:08 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:08:08 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:08:08 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:08:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:08:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:08:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:08:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:08:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:14:51 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:14:51 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:14:51 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:14:51 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:14:51 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:16:29 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:16:29 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:16:29 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:16:29 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:16:29 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:19:03 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:19:03 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:19:03 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:19:03 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:19:03 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:19:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:19:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:19:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:19:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:19:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:20:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:20:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:20:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:20:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:20:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:20:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:20:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:20:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:20:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:20:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:21:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:21:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:21:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:21:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:21:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:21:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:21:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:21:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:21:57 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:21:57 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:22:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:22:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:22:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:22:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:22:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:23:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:23:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:23:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:23:36 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:23:36 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[16:56:43 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[16:56:43 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[16:56:43 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[16:56:43 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[16:56:43 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:04:10 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:04:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:04:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:04:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:04:10 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:19:18 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:19:18 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:19:18 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:19:18 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:19:18 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:19:50 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:19:50 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:19:50 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:19:50 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:19:50 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:20:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:20:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:20:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:20:31 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:20:31 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:20:34 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:20:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:20:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:20:34 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:20:34 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[17:47:14 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[17:47:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[17:47:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[17:47:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[17:47:14 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:00:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:00:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:00:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:00:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:00:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:00:40 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:00:40 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:00:40 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:00:40 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:00:40 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:00:59 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:00:59 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:00:59 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:00:59 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:00:59 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:01:10 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:01:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:01:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:01:10 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:01:10 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:01:12 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:01:12 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:01:12 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:01:12 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:01:12 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:01:14 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:01:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:01:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:01:14 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:01:14 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:01:17 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:01:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:01:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:01:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:01:17 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:01:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:01:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:01:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:01:19 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:01:19 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:02:17 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:02:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:02:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:02:17 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:02:17 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
+
+[18:02:45 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Started,Controller : Branch]
+
+[18:02:45 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository-- >GetAllBranches() started *****
+
+
+[18:02:45 INF] Eduzest.HRMS.Repository.Service.BranchRepository - branches -- >data found
+
+
+[18:02:45 INF] Eduzest.HRMS.Repository.Service.BranchRepository - ***** BranchRepository -- > GetAllBranches() completed*****
+
+
+[18:02:45 INF] Eduzest.HRMS.WebApi.Controllers.BranchController - 
+	[Action method : GetBranches,Status : Completed,Controller : Branch]
