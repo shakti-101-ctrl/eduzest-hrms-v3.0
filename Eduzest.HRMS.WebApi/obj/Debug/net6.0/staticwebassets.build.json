@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H8tDiItVAB7rEOCydEdJgq8AaPggkuBbmUdiDCu6trE=",
+  "Hash": "EXGhQjosGYpe9ljtsif5+4rF7abfIeMdZepiI6lBqCc=",
   "Source": "Eduzest.HRMS.WebApi",
   "BasePath": "_content/Eduzest.HRMS.WebApi",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Eduzest.HRMS.WebApi\\wwwroot",
       "Source": "Eduzest.HRMS.WebApi",
-      "ContentRoot": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.WebApi\\wwwroot\\",
+      "ContentRoot": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.WebApi\\wwwroot\\",
       "BasePath": "_content/Eduzest.HRMS.WebApi",
       "Pattern": "**"
     }

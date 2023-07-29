@@ -32,6 +32,9 @@ namespace Eduzest.HRMS.Repository.DTO
 
         //[Required(ErrorMessage = "Address is required")]
         public string? Address { get; set; }
+        public DateTime? CreatedOn { get; set; }
+        public string? CreatedBy { get; set; }
+        public bool IsActive { get; set; }
 
     }
 }

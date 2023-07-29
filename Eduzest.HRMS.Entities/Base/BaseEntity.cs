@@ -15,7 +15,7 @@ namespace Eduzest.HRMS.Entities.Base
         ////[Column("id")]
         ////[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         ////public Guid? Id { get; set; }
-        [JsonIgnore]
+        //[JsonIgnore]
 
         [Column("createdon"), DataType(DataType.Date)]
         public DateTime? CreatedOn { get; set; }

@@ -3977,11 +3977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Repository\\Eduzest.HRMS.Repository.csproj",
+      "projectUniqueName": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Repository\\Eduzest.HRMS.Repository.csproj",
       "projectName": "Eduzest.HRMS.Repository",
-      "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Repository\\Eduzest.HRMS.Repository.csproj",
+      "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Repository\\Eduzest.HRMS.Repository.csproj",
       "packagesPath": "C:\\Users\\Shakti\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Repository\\obj\\",
+      "outputPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4001,8 +4001,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.DataAccess\\Eduzest.HRMS.DataAccess.csproj": {
-              "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.DataAccess\\Eduzest.HRMS.DataAccess.csproj"
+            "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.DataAccess\\Eduzest.HRMS.DataAccess.csproj": {
+              "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.DataAccess\\Eduzest.HRMS.DataAccess.csproj"
             }
           }
         }

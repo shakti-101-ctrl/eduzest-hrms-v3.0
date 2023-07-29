@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X2IpfWw3sENxXQcq+SPIx8vWY91i6k6nlWa/CxUCSGcxe1HN7iFujY31efpQ+ZwYfNdpEzIws8jJ+Sue5PHm/g==",
+  "dgSpecHash": "8DU/e6anNPDiJoiokQeVZqxXmQ6OCyiv6Bnb1AcafWaw+tzxoQk6w7iYzi0brAJuK6NvuWzmj4E2DgHTTAgb2w==",
   "success": true,
-  "projectFilePath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.WebApi\\Eduzest.HRMS.WebApi.csproj",
+  "projectFilePath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.WebApi\\Eduzest.HRMS.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shakti\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Shakti\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

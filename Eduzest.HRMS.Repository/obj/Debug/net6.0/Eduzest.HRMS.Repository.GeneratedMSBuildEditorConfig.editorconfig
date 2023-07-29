@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Eduzest.HRMS.Repository
-build_property.ProjectDir = C:\projects\HRMS_Eduzest\eduzest-hrms-v2.0-master\eduzest-hrms-v2.0-master\Eduzest.HRMS.Repository\
+build_property.ProjectDir = C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Repository\

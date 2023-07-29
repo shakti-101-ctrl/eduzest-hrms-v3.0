@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Eduzest.HRMS.DataAccess;
 using Eduzest.HRMS.Entities.Entities.Admin;
+using Eduzest.HRMS.Repository.DTO;
 using Eduzest.HRMS.Repository.DTO.Admin;
 using Eduzest.HRMS.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
@@ -46,6 +47,32 @@ namespace Eduzest.HRMS.Repository.Service
                 return loginResponse;
             }
 
+        }
+
+        public async Task<ServiceResponse<Registration>> AdminRegistration(RegistrationDto registrationDto)
+        {
+            ServiceResponse<Registration> serviceResponse = new ServiceResponse<Registration>();
+            try
+            {
+                if(registrationDto!=null)
+                {
+                    registrationDto.CreatedOn = DateTime.Now;
+                    this.Add(_mapper.Map<Registration>(registrationDto));
+                    //var result = await _unitOfWork.Admin.Add(registrationDto);
+                    serviceResponse.Success = true;
+                    serviceResponse.Response = (int)ResponseType.Ok;
+                    serviceResponse.Message = MessaageType.Saved;
+
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Message = MessaageType.FailureOnException;
+                serviceResponse.Success = false;
+                serviceResponse.Response = (int)ResponseType.InternalServerError;
+            }
+            return serviceResponse;
         }
 
         string GenerateRandomToken(int length)

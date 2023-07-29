@@ -20,11 +20,13 @@ namespace Eduzest.HRMS.Repository.Service
         private readonly IMapper mapper;
         //private readonly ILogger<BranchRepository> logger;
         private readonly IConfiguration configuration;
+        private readonly UnitOfWorks unitOfWorks;
         public UnitOfWorks(DataContext _context,IMapper _mapper, IConfiguration _configuration)
         {
             this.context = _context;
             this.mapper = _mapper;
             this.configuration = _configuration;
+           // this.unitOfWorks = _unitOfWorks;
             
             Branches = new BranchRepository(context,mapper);
             Admin = new AdminRepository(context, mapper,_configuration);

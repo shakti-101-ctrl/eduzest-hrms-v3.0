@@ -14,7 +14,7 @@ namespace Eduzest.HRMS.Repository.Interface
     {
         //add any other methods if it requires othere than generic methods.
         Task<ServiceResponse<List<GetBranchDto>>> GetAllBranches();
-        Task<ServiceResponse<GetBranchDto>> AddBranch(AddBranchDto getBranchDto);
+        Task<ServiceResponse<GetBranchDto>> AddBranch(AddBranchDto addBranchDto);
         Task<ServiceResponse<GetBranchDto>> UpdateBranch(UpdateBranchDto updateBranchDto, Guid? id);
         Task<ServiceResponse<GetBranchDto>> DeleteBranch(Guid branchid);
         Task<ServiceResponse<GetBranchDto>> GetBranchById(Guid branchid);

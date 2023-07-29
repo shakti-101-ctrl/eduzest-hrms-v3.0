@@ -33,20 +33,22 @@ namespace Eduzest.HRMS.Repository.Service
         }
         public void Add(T entity)
         {
-                _dataContext.Set<T>().Add(entity);
+            _dataContext.Set<T>().AddAsync(entity);
+
+            _dataContext.SaveChangesAsync();
         }
         public async void Delete(T entity)
         {
           
-                _dataContext.Set<T>().Attach(entity);
-                _dataContext.Entry(entity).State = EntityState.Modified;
-                
+            _dataContext.Set<T>().Attach(entity);
+            _dataContext.Entry(entity).State = EntityState.Modified;
+            _dataContext.SaveChanges();
         }
 
         public async Task<List<T>> GetAll()
         {
             
-                var entities = _dataContext.Set<T>().AsNoTracking();
+            var entities = _dataContext.Set<T>().AsNoTracking();
             return entities.ToList();
                  
         }
@@ -54,14 +56,15 @@ namespace Eduzest.HRMS.Repository.Service
         {
 
             var entity = await _dataContext.Set<T>().FindAsync(id);
-            return entity;
+            return _mapper.Map<T>(entity);
         }
 
         public void Update(T entity)
         {
-                _dataContext.Set<T>().Attach(entity);
-                _dataContext.Entry(entity).State = EntityState.Modified;
-        
+            _dataContext.Set<T>().Attach(entity);
+            _dataContext.Entry(entity).State = EntityState.Modified;
+            _dataContext.SaveChangesAsync();
+
         }
     }
 }

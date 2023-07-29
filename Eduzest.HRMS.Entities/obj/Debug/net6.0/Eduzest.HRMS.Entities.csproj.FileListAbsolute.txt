@@ -46,3 +46,15 @@ C:\projects\HRMS_Eduzest\eduzest-hrms-v2.0-master\eduzest-hrms-v2.0-master\Eduze
 C:\projects\HRMS_Eduzest\eduzest-hrms-v2.0-master\eduzest-hrms-v2.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\refint\Eduzest.HRMS.Entities.dll
 C:\projects\HRMS_Eduzest\eduzest-hrms-v2.0-master\eduzest-hrms-v2.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.pdb
 C:\projects\HRMS_Eduzest\eduzest-hrms-v2.0-master\eduzest-hrms-v2.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\ref\Eduzest.HRMS.Entities.dll
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\bin\Debug\net6.0\Eduzest.HRMS.Entities.deps.json
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\bin\Debug\net6.0\Eduzest.HRMS.Entities.dll
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\bin\Debug\net6.0\Eduzest.HRMS.Entities.pdb
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.csproj.AssemblyReference.cache
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.AssemblyInfoInputs.cache
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.AssemblyInfo.cs
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.csproj.CoreCompileInputs.cache
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.dll
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\refint\Eduzest.HRMS.Entities.dll
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\Eduzest.HRMS.Entities.pdb
+C:\projects\HRMS_Eduzest\eduzest-hrms-v3.0-master\eduzest-hrms-v3.0-master\Eduzest.HRMS.Entities\obj\Debug\net6.0\ref\Eduzest.HRMS.Entities.dll

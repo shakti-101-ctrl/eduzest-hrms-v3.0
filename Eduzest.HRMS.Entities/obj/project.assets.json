@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Entities\\Eduzest.HRMS.Entities.csproj",
+      "projectUniqueName": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Entities\\Eduzest.HRMS.Entities.csproj",
       "projectName": "Eduzest.HRMS.Entities",
-      "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Entities\\Eduzest.HRMS.Entities.csproj",
+      "projectPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Entities\\Eduzest.HRMS.Entities.csproj",
       "packagesPath": "C:\\Users\\Shakti\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v2.0-master\\eduzest-hrms-v2.0-master\\Eduzest.HRMS.Entities\\obj\\",
+      "outputPath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

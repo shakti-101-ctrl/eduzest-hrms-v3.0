@@ -14,6 +14,6 @@ namespace Eduzest.HRMS.Repository.Interface
     {
         //login funtionality
         public Task<LoginResponse> AdminLogin(LoginDto loginDto);
-
+        public Task<ServiceResponse<Registration>> AdminRegistration(RegistrationDto registrationDto);
     }
 }

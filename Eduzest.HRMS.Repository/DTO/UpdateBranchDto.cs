@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Eduzest.HRMS.Repository.DTO
 {
-    public class UpdateBranchDto :BaseEntity
+    public class UpdateBranchDto 
     {
         [JsonIgnore]
         public Guid? BranchId { get; set; }
@@ -32,5 +32,8 @@ namespace Eduzest.HRMS.Repository.DTO
 
         //[Required(ErrorMessage = "Address is required")]
         public string? Address { get; set; }
+        public DateTime? UpdatedOn { get; set; }
+        public string? UpdatedBy { get; set; }
+        public bool IsActive { get; set; }
     }
 }
