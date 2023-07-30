@@ -38,7 +38,7 @@ namespace Eduzest.HRMS.WebApi.Controllers
 
                     //branchDto.CreatedOn = DateTime.Now;
                     var result = await _unitOfWork.Admin.AdminRegistration(registrationDto);
-                    //_unitOfWork.Complete();
+                    await _unitOfWork.Complete();
                     _unitOfWork.Dispose();
                     return Ok(result);
                 }

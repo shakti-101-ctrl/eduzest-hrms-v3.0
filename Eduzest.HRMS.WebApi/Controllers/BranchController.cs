@@ -65,7 +65,7 @@ namespace Eduzest.HRMS.WebApi.Controllers
                    
                     //branchDto.CreatedOn = DateTime.Now;
                     var result = await _unitOfWork.Branches.AddBranch(addBranchDto);
-                    //_unitOfWork.Complete();
+                    await _unitOfWork.Complete();
                     _unitOfWork.Dispose();
                     return Ok(result);
                 }
@@ -88,7 +88,7 @@ namespace Eduzest.HRMS.WebApi.Controllers
             try
             {   
                 var result = await _unitOfWork.Branches.UpdateBranch(updateBranchDto,id);
-                //_unitOfWork.Complete();
+                await _unitOfWork.Complete();
                 _unitOfWork.Dispose();
                 return Ok(result);
             }
@@ -108,7 +108,7 @@ namespace Eduzest.HRMS.WebApi.Controllers
                 {
                     branch.IsActive = false;
                     var result = await _unitOfWork.Branches.DeleteBranch(id);
-                    //_unitOfWork.Complete();
+                    await _unitOfWork.Complete();
                     _unitOfWork.Dispose();
                     return Ok(result);
                 }

@@ -13,10 +13,10 @@ namespace Eduzest.HRMS.Repository.Interface
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<List<T>> GetAll();
+        IEnumerable<T> GetAll();
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
-        Task<T> GetItemById(Guid id);
+        T GetById(int id);
     }
 }

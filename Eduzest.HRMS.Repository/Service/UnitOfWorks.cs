@@ -20,7 +20,7 @@ namespace Eduzest.HRMS.Repository.Service
         private readonly IMapper mapper;
         //private readonly ILogger<BranchRepository> logger;
         private readonly IConfiguration configuration;
-        private readonly UnitOfWorks unitOfWorks;
+        //private readonly UnitOfWorks unitOfWorks;
         public UnitOfWorks(DataContext _context,IMapper _mapper, IConfiguration _configuration)
         {
             this.context = _context;
@@ -41,9 +41,9 @@ namespace Eduzest.HRMS.Repository.Service
             context.Dispose();
         }
 
-        public void Complete()
+        public Task Complete()
         {
-            context.SaveChanges();
+            return context.SaveChangesAsync();
         }
     }
 }

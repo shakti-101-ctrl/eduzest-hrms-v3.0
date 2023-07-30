@@ -11,6 +11,6 @@ namespace Eduzest.HRMS.Repository.Interface
         IBranchRepository Branches { get; }
         IAdminRespository Admin{ get; }
 
-        void Complete();
+        Task Complete();
     }
 }

@@ -25,7 +25,7 @@ namespace Eduzest.HRMS.Repository.Service
     {
         private readonly DataContext dataContext;
         private readonly IMapper mapper;
-        private readonly IUnitOfWork unitOfWork;
+       
         public BranchRepository(DataContext _dataContext, IMapper _mapper) : base(_dataContext, _mapper)
         {
             this.dataContext = _dataContext;
@@ -43,9 +43,9 @@ namespace Eduzest.HRMS.Repository.Service
                     addBranchDto.BranchId = Guid.NewGuid();
                     addBranchDto.CreatedOn = DateTime.Now;
                     this.Add(mapper.Map<Branch>(addBranchDto));
-
+                    //await dataContext.SaveChangesAsync();
                     //var test =await dataContext.Branches.OrderBy(e => e.CreatedOn).LastOrDefaultAsync();
-                    serviceResponse.Data = mapper.Map<GetBranchDto>(await dataContext.Branches.OrderBy(e=>e.CreatedOn).LastOrDefaultAsync());
+                   //serviceResponse.Data = mapper.Map<GetBranchDto>(await dataContext.Branches.OrderBy(e=>e.CreatedOn).LastOrDefaultAsync());
                     serviceResponse.Success = true;
                     serviceResponse.Response = (int)ResponseType.Ok;
                     serviceResponse.Message = MessaageType.Saved;
@@ -70,24 +70,30 @@ namespace Eduzest.HRMS.Repository.Service
         public async Task<ServiceResponse<GetBranchDto>> DeleteBranch(Guid branchid)
         {
             ServiceResponse<GetBranchDto> serviceResponse = new ServiceResponse<GetBranchDto>();
-            Branch branch = await dataContext.Branches.FindAsync(branchid);
+           
             try
             {
-                if (branch != null)
+               if (dataContext != null)
                 {
-                    branch.IsActive = false;
-                    this.Delete(branch);
-                    serviceResponse.Data = mapper.Map<GetBranchDto>(branch);
-                    serviceResponse.Message = MessaageType.Deleted;
-                    serviceResponse.Success = true;
-                    serviceResponse.Response = (int)ResponseType.Ok;
+                    Branch branch = await dataContext.Branches.FindAsync(branchid);
+                    if (branch != null)
+                    {
+                        branch.IsActive = false;
+                        this.Delete(branch);
+                        //await dataContext.SaveChangesAsync();
+                        serviceResponse.Data = mapper.Map<GetBranchDto>(branch);
+                        serviceResponse.Message = MessaageType.Deleted;
+                        serviceResponse.Success = true;
+                        serviceResponse.Response = (int)ResponseType.Ok;
+                    }
+                    else
+                    {
+                        serviceResponse.Message = MessaageType.DeletionFailed;
+                        serviceResponse.Success = false;
+                        serviceResponse.Response = (int)ResponseType.NoConnect;
+                    }
                 }
-                else
-                {
-                    serviceResponse.Message = MessaageType.DeletionFailed;
-                    serviceResponse.Success = false;
-                    serviceResponse.Response = (int)ResponseType.NoConnect;
-                }
+                
             }
             catch (Exception ex)
             {
@@ -101,7 +107,7 @@ namespace Eduzest.HRMS.Repository.Service
         public async Task<ServiceResponse<GetBranchDto>> GetBranchById(Guid branchid)
         {
             ServiceResponse<GetBranchDto> serviceResponse = new ServiceResponse<GetBranchDto>();
-            var branch = this.GetItemById(branchid);
+            var branch = this.GetBranchById(branchid);
             if (branch != null)
             {
                 serviceResponse.Data = mapper.Map<GetBranchDto>(branch);
@@ -125,8 +131,8 @@ namespace Eduzest.HRMS.Repository.Service
             try
             {
 
-                var branches = await this.GetAll();
-                if (branches.Count > 0)
+                IEnumerable<Branch> branches = this.GetAll();
+                if (branches!=null)
                 {
 
                     serviceResponse.Data = mapper.Map<List<GetBranchDto>>(branches.Where(x=>x.IsActive==true));
@@ -170,6 +176,7 @@ namespace Eduzest.HRMS.Repository.Service
                         brachDetails.UpdatedOn = DateTime.Now;
                         brachDetails.UpdatedBy = updateBranchDto.UpdatedBy;
                         this.Update(mapper.Map<Branch>(brachDetails));
+                        //await dataContext.SaveChangesAsync();
                         serviceResponse.Data = mapper.Map<GetBranchDto>(brachDetails);
                         serviceResponse.Message = MessaageType.Updated;
                         serviceResponse.Success = true;
