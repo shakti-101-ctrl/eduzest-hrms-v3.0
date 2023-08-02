@@ -30,6 +30,8 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         [Column("address"), StringLength(200)]
         public string? Address { get; set; }
 
+        public List<Department> Departments { get; set; }
+
     }
 }
 

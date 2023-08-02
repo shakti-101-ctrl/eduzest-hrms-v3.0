@@ -29,12 +29,15 @@ namespace Eduzest.HRMS.Repository.Service
            // this.unitOfWorks = _unitOfWorks;
             
             Branches = new BranchRepository(context,mapper);
+            Departments = new DepartmentRepository(context,mapper);
             Admin = new AdminRepository(context, mapper,_configuration);
            
         }
         public IBranchRepository Branches { get; private set; }
 
         public IAdminRespository Admin { get; private set; }
+
+        public IDepartment Departments { get; private set; }
 
         public void Dispose()
         {

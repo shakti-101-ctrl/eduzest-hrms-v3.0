@@ -13,11 +13,18 @@ namespace Eduzest.HRMS.WebApi.Helpers
     {
         public MappingProfiles() 
         {
+            //branch
             CreateMap<Branch,GetBranchDto>().ReverseMap();
             CreateMap<Branch, AddBranchDto>().ReverseMap();
             CreateMap<Branch, UpdateBranchDto>().ReverseMap();
-            //CreateMap<AddBranchDto,Branch>().ReverseMap();
-            //CreateMap<UpdateBranchDto,BranchDto>().ReverseMap();
+            CreateMap<Branch, Repository.DTO.BranchDto>().ReverseMap();
+            //department
+            CreateMap<Department, GetDepartmentDto>().ReverseMap();
+            CreateMap<Department, UpdateDepartmentDto>().ReverseMap();
+            CreateMap<Department,AddDepartmentDto>().ReverseMap(); 
+            
+            
+            
             CreateMap<Registration, RegistrationDto>().ReverseMap();
             
 

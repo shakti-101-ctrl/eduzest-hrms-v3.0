@@ -16,6 +16,13 @@ namespace Eduzest.HRMS.DataAccess
         public DataContext(DbContextOptions<DataContext> options) : base(options) 
         { 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Branch>()
+            //  .HasMany(b => b.Departments) // One Student has many Addresses
+            //  .WithOne(de => de.Branch) // Each Address belongs to one Student
+            //  .HasForeignKey(de => de.BranchId);
+        }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Designation> Designations { get; set; }

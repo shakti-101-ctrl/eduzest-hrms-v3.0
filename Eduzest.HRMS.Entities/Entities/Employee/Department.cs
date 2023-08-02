@@ -20,7 +20,8 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         [Column("department"),StringLength(50)]
         public string? DepartmentName { get; set; }
 
-        [ForeignKey("branchid")]
+        [ForeignKey("fk_branch_department")]
+        public Guid BranchId { get; set; }
         public Branch? Branch { get; set; }
     }
 }

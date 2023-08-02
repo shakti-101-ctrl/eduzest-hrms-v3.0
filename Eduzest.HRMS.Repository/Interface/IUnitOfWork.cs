@@ -10,7 +10,7 @@ namespace Eduzest.HRMS.Repository.Interface
     {
         IBranchRepository Branches { get; }
         IAdminRespository Admin{ get; }
-
+        IDepartment Departments { get; }
         Task Complete();
     }
 }
