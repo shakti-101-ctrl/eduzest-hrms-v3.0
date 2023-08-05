@@ -18,5 +18,6 @@ namespace Eduzest.HRMS.Repository.Interface
         void Update(T entity);
         void Delete(T entity);
         T GetById(int id);
+        Task Complete();
     }
 }

@@ -112,6 +112,7 @@ namespace Eduzest.HRMS.Repository.Service
                                            IsActive = department.IsActive,
                                            CreatedOn = department.CreatedOn,
                                            CreatedBy = department.CreatedBy,
+                                           UpdatedOn = department.UpdatedOn
                                        }).OrderByDescending(s=>s.CreatedOn).Where(d=>d.IsActive==true).ToListAsync();
 
                 if(departments.Count>0)

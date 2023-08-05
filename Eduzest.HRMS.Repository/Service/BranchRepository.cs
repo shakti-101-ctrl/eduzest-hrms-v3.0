@@ -43,9 +43,6 @@ namespace Eduzest.HRMS.Repository.Service
                     addBranchDto.BranchId = Guid.NewGuid();
                     addBranchDto.CreatedOn = DateTime.Now;
                     this.Add(mapper.Map<Branch>(addBranchDto));
-                    //await dataContext.SaveChangesAsync();
-                    //var test =await dataContext.Branches.OrderBy(e => e.CreatedOn).LastOrDefaultAsync();
-                   //serviceResponse.Data = mapper.Map<GetBranchDto>(await dataContext.Branches.OrderBy(e=>e.CreatedOn).LastOrDefaultAsync());
                     serviceResponse.Success = true;
                     serviceResponse.Response = (int)ResponseType.Ok;
                     serviceResponse.Message = MessaageType.Saved;
@@ -132,7 +129,7 @@ namespace Eduzest.HRMS.Repository.Service
             {
 
                 IEnumerable<Branch> branches = this.GetAll();
-                if (branches!=null)
+                if (branches.ToList().Count>0)
                 {
 
                     serviceResponse.Data = mapper.Map<List<GetBranchDto>>(branches.Where(x=>x.IsActive==true));

@@ -31,6 +31,10 @@ namespace Eduzest.HRMS.Repository.Service
             //_logger = logger;
                   
         }
+        public Task Complete()
+        {
+            return _dataContext.SaveChangesAsync();
+        }
         public void Add(T entity)
         {
             _dataContext.Set<T>().Add(entity);
@@ -63,6 +67,8 @@ namespace Eduzest.HRMS.Repository.Service
         {
             return _dataContext.Set<T>().ToList();
         }
+
+       
     }
 }
 

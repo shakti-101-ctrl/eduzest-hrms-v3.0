@@ -21,10 +21,15 @@ namespace Eduzest.HRMS.WebApi.Helpers
             //department
             CreateMap<Department, GetDepartmentDto>().ReverseMap();
             CreateMap<Department, UpdateDepartmentDto>().ReverseMap();
-            CreateMap<Department,AddDepartmentDto>().ReverseMap(); 
-            
-            
-            
+            CreateMap<Department,AddDepartmentDto>().ReverseMap();
+
+            //department
+            CreateMap<Designation, GetDesignationDto>().ReverseMap();
+            CreateMap<Designation, UpdateDesignationDto>().ReverseMap();
+            CreateMap<Designation, AddDesignationDto>().ReverseMap();
+
+
+
             CreateMap<Registration, RegistrationDto>().ReverseMap();
             
 

@@ -12,6 +12,8 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
     
     public class Branch : BaseEntity
     {
+        private List<Department> departments;
+
         [Key]
         public Guid? BranchId { get; set; }
         [Column("branchname"), StringLength(50)]
@@ -30,7 +32,7 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         [Column("address"), StringLength(200)]
         public string? Address { get; set; }
 
-        public List<Department> Departments { get; set; }
+        public List<Department> Departments { get => departments; set => departments = value; }
 
     }
 }

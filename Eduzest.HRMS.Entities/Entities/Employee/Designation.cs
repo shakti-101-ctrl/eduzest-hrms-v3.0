@@ -13,14 +13,20 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
     public class Designation : BaseEntity
     {
         [Key]
-        [Column("desigid")]
-        public Guid? DesigId { get; set; }
 
-        [Column("designationname"),StringLength(50)]
-        public string? DesignationName { get; set; }
+        public Guid Desigid { get; set; }
 
-        [ForeignKey("branchid")]
-        public  Branch? Branch { get; set; }
+        public string? Designationname { get; set; }
+
+        public Guid? BranchId { get; set; }
+
+        public Guid? DepartmentId { get; set; }
+
+        public virtual Branch? Branch { get; set; }
+
+        public virtual Department? DepartmentDept { get; set; }
+
+        public virtual ICollection<EmployeeDetails> EmployeeDetails { get; set; } = new List<EmployeeDetails>();
     }
 }
 

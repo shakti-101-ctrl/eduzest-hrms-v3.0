@@ -18,12 +18,12 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         public string? EmployeeCode { get; set; }
 
         [ForeignKey("branchid")]
-       
+       public Guid?BranchId { get; set; }
         public Branch? Brach { get; set; }
 
         [ForeignKey("deptid")]
-       
-        public Department? DeptId { get; set; }
+        public Guid? DeptId { get; set; }
+        public Department? Department { get; set; }
 
         [ForeignKey("desigid")]
        

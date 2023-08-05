@@ -128,7 +128,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("deptid");
 
-                    b.Property<Guid>("BranchId")
+                    b.Property<Guid?>("BranchId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
@@ -166,10 +166,12 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Designation", b =>
                 {
-                    b.Property<Guid?>("DesigId")
+                    b.Property<Guid>("Desigid")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("desigid");
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(100)
@@ -180,10 +182,11 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
-                    b.Property<string>("DesignationName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("designationname");
+                    b.Property<Guid?>("DepartmentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Designationname")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit")
@@ -197,12 +200,11 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.Property<Guid?>("branchid")
-                        .HasColumnType("uniqueidentifier");
+                    b.HasKey("Desigid");
 
-                    b.HasKey("DesigId");
+                    b.HasIndex("BranchId");
 
-                    b.HasIndex("branchid");
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Designations");
                 });
@@ -228,6 +230,9 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("bloodgroup");
 
+                    b.Property<Guid?>("BranchId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
@@ -244,6 +249,12 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                     b.Property<DateTime?>("DateOfJoin")
                         .HasColumnType("datetime2")
                         .HasColumnName("dateofjoin");
+
+                    b.Property<Guid?>("DepartmentDeptId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("DeptId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .HasMaxLength(50)
@@ -345,12 +356,6 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("username");
 
-                    b.Property<Guid?>("branchid")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("deptid")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid?>("desigid")
                         .HasColumnType("uniqueidentifier");
 
@@ -360,9 +365,9 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
                     b.HasKey("EmployeeCode");
 
-                    b.HasIndex("branchid");
+                    b.HasIndex("BranchId");
 
-                    b.HasIndex("deptid");
+                    b.HasIndex("DepartmentDeptId");
 
                     b.HasIndex("desigid");
 
@@ -735,9 +740,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                 {
                     b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Branch")
                         .WithMany("Departments")
-                        .HasForeignKey("BranchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BranchId");
 
                     b.Navigation("Branch");
                 });
@@ -746,28 +749,34 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                 {
                     b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Branch")
                         .WithMany()
-                        .HasForeignKey("branchid");
+                        .HasForeignKey("BranchId");
+
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "DepartmentDept")
+                        .WithMany("Designations")
+                        .HasForeignKey("DepartmentId");
 
                     b.Navigation("Branch");
+
+                    b.Navigation("DepartmentDept");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", b =>
                 {
                     b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Brach")
                         .WithMany()
-                        .HasForeignKey("branchid");
+                        .HasForeignKey("BranchId");
 
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "DeptId")
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("deptid");
+                        .HasForeignKey("DepartmentDeptId");
 
                     b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Designation", "DesigId")
-                        .WithMany()
+                        .WithMany("EmployeeDetails")
                         .HasForeignKey("desigid");
 
                     b.Navigation("Brach");
 
-                    b.Navigation("DeptId");
+                    b.Navigation("Department");
 
                     b.Navigation("DesigId");
                 });
@@ -820,6 +829,16 @@ namespace Eduzest.HRMS.DataAccess.Migrations
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Branch", b =>
                 {
                     b.Navigation("Departments");
+                });
+
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Department", b =>
+                {
+                    b.Navigation("Designations");
+                });
+
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Designation", b =>
+                {
+                    b.Navigation("EmployeeDetails");
                 });
 #pragma warning restore 612, 618
         }
