@@ -18,5 +18,6 @@ namespace Eduzest.HRMS.Repository.Interface
         Task<ServiceResponse<GetBranchDto>> UpdateBranch(UpdateBranchDto updateBranchDto, Guid? id);
         Task<ServiceResponse<GetBranchDto>> DeleteBranch(Guid branchid);
         Task<ServiceResponse<GetBranchDto>> GetBranchById(Guid branchid);
+        
     }
 }

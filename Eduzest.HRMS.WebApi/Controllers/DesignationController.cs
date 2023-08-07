@@ -24,12 +24,25 @@ namespace Eduzest.HRMS.WebApi.Controllers
             _mapper = mapper;
             _dataContext = datacontext;
         }
-        [HttpGet("getbranches")]
+        [HttpGet("getdesignations")]
         public async Task<IActionResult> GetAllDesignation()
         {
             try
             {
                 return Ok(await _unitOfWork.Designation.GetAllDesignation());
+            }
+            catch (Exception ex)
+            {
+                return Ok(new ServiceResponse<Branch>() { Message = MessaageType.FailureOnException, Response = (int)ResponseType.InternalServerError });
+            }
+
+        }
+        [HttpGet("getdepartmentbybranchId/{id}")]
+        public async Task<IActionResult> GetdepartmentByBranchId(Guid id)
+        {
+            try
+            {
+                    return Ok(await _unitOfWork.Departments.GetAllDepartmentsByBranch(id));
             }
             catch (Exception ex)
             {
@@ -53,7 +66,7 @@ namespace Eduzest.HRMS.WebApi.Controllers
             }
         }
         [HttpPost("postdesignation")]
-        public async Task<IActionResult> PostBranch(AddDesignationDto addDesignationDto)
+        public async Task<IActionResult> PostDesignation(AddDesignationDto addDesignationDto)
         {
             try
             {

@@ -139,6 +139,51 @@ namespace Eduzest.HRMS.Repository.Service
             return serviceResponse;
         }
 
+        public async Task<ServiceResponse<List<GetDepartmentDto>>> GetAllDepartmentsByBranch(Guid? branchid)
+        {
+            ServiceResponse<List<GetDepartmentDto>> serviceResponse = new ServiceResponse<List<GetDepartmentDto>>();
+            try
+            {
+                var departments = await(from branch in dataContext.Branches
+                                        join department in dataContext.Departments on branch.BranchId equals department.BranchId
+                                        select new GetDepartmentDto
+                                        {
+                                            DeptId = department.DeptId,
+                                            BranchId = branch.BranchId,
+                                            BranchName = branch.BranchName,
+                                            DepartmentName = department.DepartmentName,
+                                            IsActive = department.IsActive,
+                                            CreatedOn = department.CreatedOn,
+                                            CreatedBy = department.CreatedBy,
+                                            UpdatedOn = department.UpdatedOn
+                                        }).OrderByDescending(s => s.CreatedOn).Where(d => d.IsActive == true && d.BranchId==branchid).ToListAsync();
+
+                if (departments.Count > 0)
+                {
+                    serviceResponse.Data = departments;
+                    serviceResponse.Message = MessaageType.RecordFound;
+                    serviceResponse.Response = (int)ResponseType.Ok;
+                    serviceResponse.Success = true;
+                }
+                else
+                {
+                    serviceResponse.Message = MessaageType.NoRecordFound;
+                    serviceResponse.Response = (int)ResponseType.NoConnect;
+                    serviceResponse.Success = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Success = false;
+                serviceResponse.Response = (int)ResponseType.InternalServerError;
+                serviceResponse.Message = MessaageType.FailureOnException;
+            }
+            return serviceResponse;
+        }
+
+      
+
         public async Task<ServiceResponse<GetDepartmentDto>> GetDepartmentById(Guid deptid)
         {
             ServiceResponse<GetDepartmentDto> serviceResponse = new ServiceResponse<GetDepartmentDto>();

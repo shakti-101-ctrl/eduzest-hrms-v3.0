@@ -21,11 +21,11 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         public Guid? BranchId { get; set; }
 
         public Guid? DepartmentId { get; set; }
-
+        [NotMapped]
         public virtual Branch? Branch { get; set; }
-
+        [NotMapped]
         public virtual Department? DepartmentDept { get; set; }
-
+        [NotMapped]
         public virtual ICollection<EmployeeDetails> EmployeeDetails { get; set; } = new List<EmployeeDetails>();
     }
 }

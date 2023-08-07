@@ -16,5 +16,7 @@ namespace Eduzest.HRMS.Repository.Interface
         Task<ServiceResponse<GetDepartmentDto>> UpdateDepartments(UpdateDepartmentDto updateDepartmentDto, Guid? id);
         Task<ServiceResponse<GetDepartmentDto>> DeleteDepartment(Guid deptId);
         Task<ServiceResponse<GetDepartmentDto>> GetDepartmentById(Guid deptid);
+
+        Task<ServiceResponse<List<GetDepartmentDto>>> GetAllDepartmentsByBranch(Guid? branchid);
     }
 }

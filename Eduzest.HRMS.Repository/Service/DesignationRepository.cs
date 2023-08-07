@@ -21,8 +21,6 @@ namespace Eduzest.HRMS.Repository.Service
         {
             this.dataContext = _dataContext;
             this.mapper = _mapper;
-
-
         }
         public async Task<ServiceResponse<GetDesignationDto>> AddDesignation(AddDesignationDto addDesignationDto)
         {
@@ -100,7 +98,7 @@ namespace Eduzest.HRMS.Repository.Service
             ServiceResponse<List<GetDesignationDto>> serviceResponse = new ServiceResponse<List<GetDesignationDto>>();
             try
             {
-
+                //var data = dataContext.Designations.ToList();
                 IEnumerable<Designation> designations = this.GetAll();
                 if (designations.ToList().Count>0)
                 {
@@ -112,7 +110,6 @@ namespace Eduzest.HRMS.Repository.Service
                 }
                 else
                 {
-                    //serviceResponse.data = _mapper.Map<List<GetCategoryDto>>(category);
                     serviceResponse.Message = MessaageType.NoRecordFound;
                     serviceResponse.Response = (int)ResponseType.NoConnect;
                     serviceResponse.Success = false;

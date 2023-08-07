@@ -16,5 +16,6 @@ namespace Eduzest.HRMS.Repository.Interface
         Task<ServiceResponse<GetDesignationDto>> UpdateDesignation(UpdateDesignationDto updateDesignationDto, Guid? id);
         Task<ServiceResponse<GetDesignationDto>> DeleteDesignation(Guid deignationId);
         Task<ServiceResponse<GetDesignationDto>> GetDesignationById(Guid designationId);
+
     }
 }
