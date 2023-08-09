@@ -15,17 +15,11 @@ namespace Eduzest.HRMS.Entities.Entities.Employee
         [Key]
 
         public Guid Desigid { get; set; }
-
         public string? Designationname { get; set; }
-
         public Guid? BranchId { get; set; }
-
         public Guid? DepartmentId { get; set; }
-        [NotMapped]
         public virtual Branch? Branch { get; set; }
-        [NotMapped]
         public virtual Department? DepartmentDept { get; set; }
-        [NotMapped]
         public virtual ICollection<EmployeeDetails> EmployeeDetails { get; set; } = new List<EmployeeDetails>();
     }
 }

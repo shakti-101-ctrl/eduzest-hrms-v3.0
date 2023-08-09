@@ -202,6 +202,8 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
                     b.HasKey("Desigid");
 
+                    b.HasIndex("BranchId");
+
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Designations");
@@ -745,9 +747,17 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Designation", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", null)
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Branch")
+                        .WithMany()
+                        .HasForeignKey("BranchId");
+
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "DepartmentDept")
                         .WithMany("Designations")
                         .HasForeignKey("DepartmentId");
+
+                    b.Navigation("Branch");
+
+                    b.Navigation("DepartmentDept");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", b =>
@@ -761,7 +771,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasForeignKey("DepartmentDeptId");
 
                     b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Designation", "DesigId")
-                        .WithMany()
+                        .WithMany("EmployeeDetails")
                         .HasForeignKey("desigid");
 
                     b.Navigation("Brach");
@@ -824,6 +834,11 @@ namespace Eduzest.HRMS.DataAccess.Migrations
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Department", b =>
                 {
                     b.Navigation("Designations");
+                });
+
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Designation", b =>
+                {
+                    b.Navigation("EmployeeDetails");
                 });
 #pragma warning restore 612, 618
         }

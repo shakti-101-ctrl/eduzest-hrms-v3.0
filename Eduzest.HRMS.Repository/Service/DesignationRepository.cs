@@ -33,7 +33,7 @@ namespace Eduzest.HRMS.Repository.Service
                     addDesignationDto.CreatedOn = DateTime.Now;
                     this.Add(mapper.Map<Designation>(addDesignationDto));
                     await this.Complete();
-                    serviceResponse.Data =mapper.Map<GetDesignationDto>(dataContext.Designations.OrderBy(x => x.CreatedOn).LastOrDefaultAsync());
+                    //serviceResponse.Data =mapper.Map<GetDesignationDto>(dataContext.Designations.OrderBy(x => x.CreatedOn).LastOrDefaultAsync());
                     serviceResponse.Success = true;
                     serviceResponse.Response = (int)ResponseType.Ok;
                     serviceResponse.Message = MessaageType.Saved;
@@ -98,12 +98,28 @@ namespace Eduzest.HRMS.Repository.Service
             ServiceResponse<List<GetDesignationDto>> serviceResponse = new ServiceResponse<List<GetDesignationDto>>();
             try
             {
-                //var data = dataContext.Designations.ToList();
-                IEnumerable<Designation> designations = this.GetAll();
-                if (designations.ToList().Count>0)
-                {
+                var designations = await (from _branch in dataContext.Branches
+                                          join _dept in dataContext.Departments on _branch.BranchId equals _dept.BranchId
+                                          join _desig in dataContext.Designations on _dept.DeptId equals _desig.DepartmentId
+                                          select new GetDesignationDto
+                                          {
+                                              Desigid = _desig.Desigid,
+                                              Designationname= _desig.Designationname,
+                                              BranchId = _dept.BranchId,
+                                              BranchName=_branch.BranchName,
+                                              DepartmentId=_desig.DepartmentId,
+                                              DepartmentName=_dept.DepartmentName,
+                                              CreatedOn=_desig.CreatedOn,
+                                              CreatedBy=_desig.CreatedBy,
+                                              UpdatedOn=_desig.UpdatedOn,
+                                              UpdatedBy=_desig.UpdatedBy,
+                                              IsActive= _desig.IsActive
 
-                    serviceResponse.Data = mapper.Map<List<GetDesignationDto>>(designations.Where(x => x.IsActive == true));
+
+                                          }).OrderByDescending(d => d.CreatedOn).Where(d=>d.IsActive).ToListAsync();
+               if(designations.Count>0)
+                {
+                    serviceResponse.Data = designations;
                     serviceResponse.Message = MessaageType.RecordFound;
                     serviceResponse.Response = (int)ResponseType.Ok;
                     serviceResponse.Success = true;
@@ -114,8 +130,9 @@ namespace Eduzest.HRMS.Repository.Service
                     serviceResponse.Response = (int)ResponseType.NoConnect;
                     serviceResponse.Success = false;
                 }
+
             }
-            catch (Exception ex)
+            catch(Exception ex) 
             {
                 serviceResponse.Success = false;
                 serviceResponse.Response = (int)ResponseType.InternalServerError;
