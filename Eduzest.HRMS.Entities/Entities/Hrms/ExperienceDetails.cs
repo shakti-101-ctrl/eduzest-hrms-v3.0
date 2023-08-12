@@ -11,24 +11,26 @@ using System.Threading.Tasks;
 namespace Eduzest.HRMS.Entities.Entities.Hrms
 {
     //[Table("ExperienceDetails")]
-    public class ExperienceDetails : BaseEntity
+    public class ExperienceDetail : BaseEntity
     {
         [Key]
         [Column("experienceid")]
-        public Guid? ExperienceId { get; set; }
-
-        [Column("empcode")]
-        public EmployeeDetails? EmpCode { get; set; }
-
+        public Guid Experienceid { get; set; }
+        
+        
+        [Column("employeeCode"),StringLength(50)]
+        public string? EmployeeCode { get; set; }
+        
+        
         [Column("fromdate")]
-        public DateTime? FromDate { get; set; }
-
+        public DateTime? Fromdate { get; set; }
         [Column("todate")]
-        public DateTime? ToDate { get; set; }
-
-       
-        [Column("authorizedby")]
-        public DateTime? AuthorizedBy { get; set; }
+        public DateTime? Todate { get; set; }
+        
+        
+        [Column("authorizedby"),StringLength(50)]
+        public string? Authorizedby { get; set; }
+        public virtual EmployeeDetails? EmpCodeEmployeeCodeNavigation { get; set; }
 
     }
 }

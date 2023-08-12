@@ -15,36 +15,35 @@ namespace Eduzest.HRMS.Entities.Entities.Hrms
     {
         [Key]
         [Column("assignid")]
-        public Guid? AssignId { get; set; }
-
-      
-        [ForeignKey("employeecode")]
-        public EmployeeDetails? EmployeeCode { get; set; }
-
+        public Guid Assignid { get; set; }
+        
+        [Column("employeecode"),StringLength(100)]
+        public string? Employeecode { get; set; }
+        
         [Column("totalallowance")]
-        public float? TotalAllowance { get; set; }
-
+        public float? Totalallowance { get; set; }
+        
         [Column("totaldeduction")]
-        public float? TotalDeduction { get; set; }
-
+        public float? Totaldeduction { get; set; }
+        
         [Column("overtimetotalhour")]
-        public int? OverTimeTotalHour { get; set; }
-
+        public int? Overtimetotalhour { get; set; }
+        
         [Column("overtimeamount")]
-        public float? OverTimeAmmount { get; set; }
-
+        public float? Overtimeamount { get; set; }
+        
         [Column("netsalary")]
-        public float? NetSalary { get; set; }
-
+        public float? Netsalary { get; set; }
+        
         [Column("payvia"),StringLength(50)]
-        public string? PayVia { get; set; }
-
-        [Column("accountnumber"), StringLength(50)]
-        public string? AccountNumber { get; set; }
-
-        [Column("remark"), StringLength(50)]
+        public string? Payvia { get; set; }
+        
+        [Column("accountnumber"),StringLength(100)]
+        public string? Accountnumber { get; set; }
+        
+        [Column("remark"),StringLength(100)]
         public string? Remark { get; set; }
-
+        public virtual EmployeeDetails? EmployeecodeNavigation { get; set; }
 
     }
 }

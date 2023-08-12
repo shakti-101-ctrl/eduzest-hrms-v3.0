@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8DU/e6anNPDiJoiokQeVZqxXmQ6OCyiv6Bnb1AcafWaw+tzxoQk6w7iYzi0brAJuK6NvuWzmj4E2DgHTTAgb2w==",
+  "dgSpecHash": "MEXpBLNrsZjup/QN/Wx85Zvw42QX9wib2lwtIEHJ1c+hjPxkqCDnMZnoUGZdurOdl76TOy9DaKxz8SL5lKsyIw==",
   "success": true,
   "projectFilePath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.WebApi\\Eduzest.HRMS.WebApi.csproj",
   "expectedPackageFiles": [
@@ -101,10 +101,10 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Shakti\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Shakti\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }

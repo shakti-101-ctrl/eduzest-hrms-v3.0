@@ -29,13 +29,12 @@ namespace Eduzest.HRMS.DataAccess
         public DbSet<EmployeeDetails> EmployeeDetails { get; set; }
         public DbSet<Allowances> Allowances { get; set; }
         public DbSet<Deduction> Deductions { get; set;}
-        public DbSet<ExperienceDetails> ExperienceDetails { get; set; }
-        public DbSet<RelievingDetails> RelievingDetails { get; set;}
+        public DbSet<ExperienceDetail> ExperienceDetails { get; set; }
+        public DbSet<RelievingDetail> RelievingDetails { get; set;}
         public DbSet<SalaryAssignment> SalaryAssignments { get; set;}
         public DbSet<SalaryTemplate> SalaryTemplates { get; set;}
         public  DbSet<LogDetails> LogDetails { get; set; }  
         public DbSet<Registration> Registrations { get; set; }
-
 
     }
 }

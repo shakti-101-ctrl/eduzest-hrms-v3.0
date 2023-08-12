@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "p0OzQr6dMmT3iWSWNEcr4rRxwmokPQ1KdqQIb0pee/7ZX2goWJbV7GhWjxFW/6OSPn6TBr47uxovZrzp0Ue5fg==",
+  "dgSpecHash": "hlVwRti1T+/SrNCX4mwpz1TO7S8Xo2jKUBit357hPMPjHKDid+GVix0N5UxoJrl1ZDiZGu/eVG+8yYsd72AU7A==",
   "success": true,
   "projectFilePath": "C:\\projects\\HRMS_Eduzest\\eduzest-hrms-v3.0-master\\eduzest-hrms-v3.0-master\\Eduzest.HRMS.Entities\\Eduzest.HRMS.Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Shakti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }

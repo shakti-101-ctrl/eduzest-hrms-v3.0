@@ -14,17 +14,21 @@ namespace Eduzest.HRMS.Entities.Entities.Hrms
     {
         [Key]
         [Column("allowanceid")]
-        public Guid? AllowanceId { get; set; }
+        public Guid Allowanceid { get; set; }
+        
+        
         [Column("allowancename"),StringLength(50)]
-
-        public string? AllowanceName { get; set;}
-
+        public string? Allowancename { get; set; }
+        
+        
         [Column("ammount")]
-
         public float? Ammount { get; set; }
-
-        [ForeignKey("salarytemplate")]
-        public SalaryTemplate? SalaryTemplate { get; set; }
+        
+        
+        [Column("salarytemplate")]
+        public Guid? Salarytemplate { get; set; }
+        
+        public virtual SalaryTemplate? SalarytemplateNavigation { get; set; }
 
 
     }

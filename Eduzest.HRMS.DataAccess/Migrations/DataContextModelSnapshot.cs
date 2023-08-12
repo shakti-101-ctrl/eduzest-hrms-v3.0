@@ -211,27 +211,28 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", b =>
                 {
-                    b.Property<string>("EmployeeCode")
+                    b.Property<string>("Employeecode")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("employeecode");
 
-                    b.Property<string>("BankAddress")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                    b.Property<string>("Bankaddress")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
                         .HasColumnName("bankaddress");
 
-                    b.Property<string>("BankName")
+                    b.Property<string>("Bankname")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("bankname");
 
-                    b.Property<string>("BloodGroup")
+                    b.Property<string>("Bloodgroup")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("bloodgroup");
 
                     b.Property<Guid?>("BranchId")
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("branchId");
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(100)
@@ -242,51 +243,52 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
-                    b.Property<DateTime?>("DateOfBirth")
+                    b.Property<DateTime?>("Dateofbirth")
                         .HasColumnType("datetime2")
                         .HasColumnName("dateofbirth");
 
-                    b.Property<DateTime?>("DateOfJoin")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("dateofjoin");
+                    b.Property<DateTime?>("Dateofjoin")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("DepartmentDeptId")
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("departmentdeptid");
 
-                    b.Property<Guid?>("DeptId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<Guid?>("Desigid")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("desigid");
 
                     b.Property<string>("Email")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("email");
 
-                    b.Property<string>("EmployeeName")
+                    b.Property<string>("Employeename")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("employeename");
 
-                    b.Property<string>("ExpDetails")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
+                    b.Property<string>("Expdetails")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("expdetails");
 
-                    b.Property<string>("FaceBook")
+                    b.Property<string>("Facebook")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("facebook");
 
-                    b.Property<string>("FatherName")
+                    b.Property<string>("Fathername")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("fathername");
 
-                    b.Property<int?>("Gender")
+                    b.Property<string>("Gender")
                         .HasMaxLength(50)
-                        .HasColumnType("int")
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("gender");
 
-                    b.Property<string>("IfscCode")
+                    b.Property<string>("Ifsccode")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("ifsccode");
@@ -295,7 +297,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
-                    b.Property<string>("LinkedIn")
+                    b.Property<string>("Linkedin")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("linkedin");
@@ -310,19 +312,23 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("password");
 
-                    b.Property<string>("PermanentAddress")
+                    b.Property<string>("Permanentaddress")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)")
                         .HasColumnName("permanentaddress");
 
-                    b.Property<string>("PresentAddress")
+                    b.Property<string>("Presentaddress")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)")
                         .HasColumnName("presentaddress");
 
+                    b.Property<string>("Profilepicture")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("profilepicture");
+
                     b.Property<string>("Qualification")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("qualification");
 
                     b.Property<string>("Religion")
@@ -330,13 +336,12 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("religion");
 
-                    b.Property<bool?>("SkipBankdetails")
+                    b.Property<bool?>("Skipbankdetails")
                         .HasColumnType("bit")
                         .HasColumnName("skipbankdetails");
 
-                    b.Property<int?>("TotalExp")
-                        .HasColumnType("int")
-                        .HasColumnName("totalexp");
+                    b.Property<int?>("Totalexp")
+                        .HasColumnType("int");
 
                     b.Property<string>("Twitter")
                         .HasMaxLength(100)
@@ -351,37 +356,30 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Username")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("username");
 
-                    b.Property<Guid?>("desigid")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("profilepicture")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("profilepicture");
-
-                    b.HasKey("EmployeeCode");
+                    b.HasKey("Employeecode");
 
                     b.HasIndex("BranchId");
 
                     b.HasIndex("DepartmentDeptId");
 
-                    b.HasIndex("desigid");
+                    b.HasIndex("Desigid");
 
                     b.ToTable("EmployeeDetails");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.Allowances", b =>
                 {
-                    b.Property<Guid?>("AllowanceId")
+                    b.Property<Guid>("Allowanceid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("allowanceid");
 
-                    b.Property<string>("AllowanceName")
+                    b.Property<string>("Allowancename")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("allowancename");
@@ -403,6 +401,13 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
+                    b.Property<Guid?>("Salarytemplate")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("salarytemplate");
+
+                    b.Property<Guid?>("SalarytemplateNavigationSalarytemplateid")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("updatedby");
@@ -411,19 +416,16 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.Property<Guid?>("salarytemplate")
-                        .HasColumnType("uniqueidentifier");
+                    b.HasKey("Allowanceid");
 
-                    b.HasKey("AllowanceId");
-
-                    b.HasIndex("salarytemplate");
+                    b.HasIndex("SalarytemplateNavigationSalarytemplateid");
 
                     b.ToTable("Allowances");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.Deduction", b =>
                 {
-                    b.Property<Guid?>("DeductionId")
+                    b.Property<Guid>("Deductionid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("deductionid");
@@ -441,7 +443,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
-                    b.Property<string>("DeductionName")
+                    b.Property<string>("Deductionname")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("deductionname");
@@ -450,6 +452,10 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
+                    b.Property<Guid?>("Salarytemplateid")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("salarytemplateid");
+
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("updatedby");
@@ -458,25 +464,23 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.Property<Guid?>("salarytemplateid")
-                        .HasColumnType("uniqueidentifier");
+                    b.HasKey("Deductionid");
 
-                    b.HasKey("DeductionId");
-
-                    b.HasIndex("salarytemplateid");
+                    b.HasIndex("Salarytemplateid");
 
                     b.ToTable("Deductions");
                 });
 
-            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.ExperienceDetails", b =>
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.ExperienceDetail", b =>
                 {
-                    b.Property<Guid?>("ExperienceId")
+                    b.Property<Guid>("Experienceid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("experienceid");
 
-                    b.Property<DateTime?>("AuthorizedBy")
-                        .HasColumnType("datetime2")
+                    b.Property<string>("Authorizedby")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("authorizedby");
 
                     b.Property<string>("CreatedBy")
@@ -488,10 +492,15 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
-                    b.Property<string>("EmpCodeEmployeeCode")
+                    b.Property<string>("EmpCodeEmployeeCodeNavigationEmployeecode")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime?>("FromDate")
+                    b.Property<string>("EmployeeCode")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("employeeCode");
+
+                    b.Property<DateTime?>("Fromdate")
                         .HasColumnType("datetime2")
                         .HasColumnName("fromdate");
 
@@ -499,7 +508,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
-                    b.Property<DateTime?>("ToDate")
+                    b.Property<DateTime?>("Todate")
                         .HasColumnType("datetime2")
                         .HasColumnName("todate");
 
@@ -511,22 +520,23 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.HasKey("ExperienceId");
+                    b.HasKey("Experienceid");
 
-                    b.HasIndex("EmpCodeEmployeeCode");
+                    b.HasIndex("EmpCodeEmployeeCodeNavigationEmployeecode");
 
                     b.ToTable("ExperienceDetails");
                 });
 
-            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.RelievingDetails", b =>
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.RelievingDetail", b =>
                 {
-                    b.Property<Guid?>("RelievingId")
+                    b.Property<Guid>("Relievingid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("relievingid");
 
-                    b.Property<DateTime?>("AuthorizedBy")
-                        .HasColumnType("datetime2")
+                    b.Property<string>("Authorizedby")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("authorizedby");
 
                     b.Property<string>("CreatedBy")
@@ -538,14 +548,19 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
-                    b.Property<DateTime?>("DateOfRelease")
+                    b.Property<DateTime?>("Dateofrelease")
                         .HasColumnType("datetime2")
                         .HasColumnName("dateofrelease");
 
-                    b.Property<string>("EmpCodeEmployeeCode")
+                    b.Property<string>("EmpCodeEmployeeCodeNavigationEmployeecode")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime?>("FromDate")
+                    b.Property<string>("EmployeeCode")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("EmployeeCode");
+
+                    b.Property<DateTime?>("Fromdate")
                         .HasColumnType("datetime2")
                         .HasColumnName("fromdate");
 
@@ -553,7 +568,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
-                    b.Property<DateTime?>("ToDate")
+                    b.Property<DateTime?>("Todate")
                         .HasColumnType("datetime2")
                         .HasColumnName("todate");
 
@@ -565,23 +580,23 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.HasKey("RelievingId");
+                    b.HasKey("Relievingid");
 
-                    b.HasIndex("EmpCodeEmployeeCode");
+                    b.HasIndex("EmpCodeEmployeeCodeNavigationEmployeecode");
 
                     b.ToTable("RelievingDetails");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.SalaryAssignment", b =>
                 {
-                    b.Property<Guid?>("AssignId")
+                    b.Property<Guid>("Assignid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("assignid");
 
-                    b.Property<string>("AccountNumber")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                    b.Property<string>("Accountnumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
                         .HasColumnName("accountnumber");
 
                     b.Property<string>("CreatedBy")
@@ -593,37 +608,45 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdon");
 
+                    b.Property<string>("Employeecode")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("employeecode");
+
+                    b.Property<string>("EmployeecodeNavigationEmployeecode")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
-                    b.Property<float?>("NetSalary")
+                    b.Property<float?>("Netsalary")
                         .HasColumnType("real")
                         .HasColumnName("netsalary");
 
-                    b.Property<float?>("OverTimeAmmount")
+                    b.Property<float?>("Overtimeamount")
                         .HasColumnType("real")
                         .HasColumnName("overtimeamount");
 
-                    b.Property<int?>("OverTimeTotalHour")
+                    b.Property<int?>("Overtimetotalhour")
                         .HasColumnType("int")
                         .HasColumnName("overtimetotalhour");
 
-                    b.Property<string>("PayVia")
+                    b.Property<string>("Payvia")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("payvia");
 
                     b.Property<string>("Remark")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
                         .HasColumnName("remark");
 
-                    b.Property<float?>("TotalAllowance")
+                    b.Property<float?>("Totalallowance")
                         .HasColumnType("real")
                         .HasColumnName("totalallowance");
 
-                    b.Property<float?>("TotalDeduction")
+                    b.Property<float?>("Totaldeduction")
                         .HasColumnType("real")
                         .HasColumnName("totaldeduction");
 
@@ -635,24 +658,21 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.Property<string>("employeecode")
-                        .HasColumnType("nvarchar(450)");
+                    b.HasKey("Assignid");
 
-                    b.HasKey("AssignId");
-
-                    b.HasIndex("employeecode");
+                    b.HasIndex("EmployeecodeNavigationEmployeecode");
 
                     b.ToTable("SalaryAssignments");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", b =>
                 {
-                    b.Property<Guid?>("SalaryTemplateId")
+                    b.Property<Guid>("Salarytemplateid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("salarytemplateid");
 
-                    b.Property<float?>("BasicSalary")
+                    b.Property<float?>("Basicsalary")
                         .HasColumnType("real")
                         .HasColumnName("basicsalary");
 
@@ -669,24 +689,24 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isactive");
 
-                    b.Property<float?>("NetSalary")
+                    b.Property<float?>("Netsalary")
                         .HasColumnType("real")
                         .HasColumnName("netsalary");
 
-                    b.Property<float?>("OverTimeRate")
+                    b.Property<float?>("Overtimerate")
                         .HasColumnType("real")
                         .HasColumnName("overtimerate");
 
-                    b.Property<string>("SalaryGrade")
+                    b.Property<string>("Salarygrade")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("salarygrade");
 
-                    b.Property<float?>("TotalAllowances")
+                    b.Property<float?>("Totalallowances")
                         .HasColumnType("real")
                         .HasColumnName("totalallowances");
 
-                    b.Property<float?>("TotalDeduction")
+                    b.Property<float?>("Totaldeduction")
                         .HasColumnType("real")
                         .HasColumnName("totaldeduction");
 
@@ -698,7 +718,7 @@ namespace Eduzest.HRMS.DataAccess.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updatedon");
 
-                    b.HasKey("SalaryTemplateId");
+                    b.HasKey("Salarytemplateid");
 
                     b.ToTable("SalaryTemplates");
                 });
@@ -762,68 +782,68 @@ namespace Eduzest.HRMS.DataAccess.Migrations
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Brach")
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Branch", "Branch")
                         .WithMany()
                         .HasForeignKey("BranchId");
 
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "Department")
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Department", "DepartmentDept")
                         .WithMany()
                         .HasForeignKey("DepartmentDeptId");
 
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Designation", "DesigId")
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.Designation", "Desig")
                         .WithMany("EmployeeDetails")
-                        .HasForeignKey("desigid");
+                        .HasForeignKey("Desigid");
 
-                    b.Navigation("Brach");
+                    b.Navigation("Branch");
 
-                    b.Navigation("Department");
+                    b.Navigation("DepartmentDept");
 
-                    b.Navigation("DesigId");
+                    b.Navigation("Desig");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.Allowances", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", "SalaryTemplate")
-                        .WithMany()
-                        .HasForeignKey("salarytemplate");
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", "SalarytemplateNavigation")
+                        .WithMany("Allowances")
+                        .HasForeignKey("SalarytemplateNavigationSalarytemplateid");
 
-                    b.Navigation("SalaryTemplate");
+                    b.Navigation("SalarytemplateNavigation");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.Deduction", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", "SalaryTemplate")
-                        .WithMany()
-                        .HasForeignKey("salarytemplateid");
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", "Salarytemplate")
+                        .WithMany("Deductions")
+                        .HasForeignKey("Salarytemplateid");
 
-                    b.Navigation("SalaryTemplate");
+                    b.Navigation("Salarytemplate");
                 });
 
-            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.ExperienceDetails", b =>
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.ExperienceDetail", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmpCode")
-                        .WithMany()
-                        .HasForeignKey("EmpCodeEmployeeCode");
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmpCodeEmployeeCodeNavigation")
+                        .WithMany("ExperienceDetails")
+                        .HasForeignKey("EmpCodeEmployeeCodeNavigationEmployeecode");
 
-                    b.Navigation("EmpCode");
+                    b.Navigation("EmpCodeEmployeeCodeNavigation");
                 });
 
-            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.RelievingDetails", b =>
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.RelievingDetail", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmpCode")
-                        .WithMany()
-                        .HasForeignKey("EmpCodeEmployeeCode");
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmpCodeEmployeeCodeNavigation")
+                        .WithMany("RelievingDetails")
+                        .HasForeignKey("EmpCodeEmployeeCodeNavigationEmployeecode");
 
-                    b.Navigation("EmpCode");
+                    b.Navigation("EmpCodeEmployeeCodeNavigation");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.SalaryAssignment", b =>
                 {
-                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmployeeCode")
-                        .WithMany()
-                        .HasForeignKey("employeecode");
+                    b.HasOne("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", "EmployeecodeNavigation")
+                        .WithMany("SalaryAssignments")
+                        .HasForeignKey("EmployeecodeNavigationEmployeecode");
 
-                    b.Navigation("EmployeeCode");
+                    b.Navigation("EmployeecodeNavigation");
                 });
 
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Branch", b =>
@@ -839,6 +859,22 @@ namespace Eduzest.HRMS.DataAccess.Migrations
             modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.Designation", b =>
                 {
                     b.Navigation("EmployeeDetails");
+                });
+
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Employee.EmployeeDetails", b =>
+                {
+                    b.Navigation("ExperienceDetails");
+
+                    b.Navigation("RelievingDetails");
+
+                    b.Navigation("SalaryAssignments");
+                });
+
+            modelBuilder.Entity("Eduzest.HRMS.Entities.Entities.Hrms.SalaryTemplate", b =>
+                {
+                    b.Navigation("Allowances");
+
+                    b.Navigation("Deductions");
                 });
 #pragma warning restore 612, 618
         }

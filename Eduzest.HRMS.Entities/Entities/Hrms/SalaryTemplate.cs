@@ -14,25 +14,27 @@ namespace Eduzest.HRMS.Entities.Entities.Hrms
     {
         [Key]
         [Column("salarytemplateid")]
-        public Guid? SalaryTemplateId { get; set; }
+        public Guid Salarytemplateid { get; set; }
 
         [Column("salarygrade"),StringLength(50)]
-        public string? SalaryGrade { get; set; }
+        public string? Salarygrade { get; set; }
 
         [Column("basicsalary")]
-        public float? BasicSalary { get; set; }
+        public float? Basicsalary { get; set; }
 
         [Column("overtimerate")]
-        public float? OverTimeRate { get; set; }
-        
+        public float? Overtimerate { get; set; }
+
         [Column("totalallowances")]
-        public float? TotalAllowances { get; set; }
+        public float? Totalallowances { get; set; }
 
         [Column("totaldeduction")]
-        public float? TotalDeduction { get; set; }
+        public float? Totaldeduction { get; set; }
 
         [Column("netsalary")]
-        public float? NetSalary { get; set; }
+        public float? Netsalary { get; set; }
+        public virtual ICollection<Allowances> Allowances { get; set; } = new List<Allowances>();
+        public virtual ICollection<Deduction> Deductions { get; set; } = new List<Deduction>();
 
     }
 }
