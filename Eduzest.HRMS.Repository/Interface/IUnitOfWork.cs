@@ -12,6 +12,7 @@ namespace Eduzest.HRMS.Repository.Interface
         IAdminRespository Admin{ get; }
         IDepartment Departments { get; }
         IDesignation Designation { get; }
+        IEmployeeDetails EmployeeDetails { get; }
         Task Complete();
     }
 }

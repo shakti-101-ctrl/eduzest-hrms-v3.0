@@ -32,6 +32,7 @@ namespace Eduzest.HRMS.Repository.Service
             Departments = new DepartmentRepository(context,mapper);
             Admin = new AdminRepository(context, mapper,_configuration);
             Designation= new DesignationRepository(context,mapper);
+            EmployeeDetails = new EmployeeRepository(context, mapper);
            
         }
         public IBranchRepository Branches { get; private set; }
@@ -41,6 +42,8 @@ namespace Eduzest.HRMS.Repository.Service
         public IDepartment Departments { get; private set; }
 
         public IDesignation Designation { get; private set; }
+
+        public IEmployeeDetails EmployeeDetails { get; private set; }
 
         public void Dispose()
         {

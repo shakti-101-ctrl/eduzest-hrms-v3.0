@@ -141,6 +141,47 @@ namespace Eduzest.HRMS.Repository.Service
             return serviceResponse;
         }
 
+        public async Task<ServiceResponse<List<GetDesignationByDepartmentDto>>> GetdesignationByDepartment(Guid? deptid)
+        {
+            ServiceResponse<List<GetDesignationByDepartmentDto>> serviceResponse = new ServiceResponse<List<GetDesignationByDepartmentDto>>();
+            try
+            {
+                var designations = await (from depart in dataContext.Departments
+                                         join desig in dataContext.Designations on depart.DeptId equals desig.Desigid
+                                         select new GetDesignationByDepartmentDto
+                                         {
+                                             DesignationId = desig.Desigid,
+                                             DepartmentId = depart.DeptId,
+                                             DesignationName = desig.Designationname,
+                                             IsActive = depart.IsActive
+
+
+                                         }).Where(d => d.IsActive == true && d.DepartmentId == deptid).ToListAsync();
+
+                if (designations.Count > 0)
+                {
+                    serviceResponse.Data = designations;
+                    serviceResponse.Message = MessaageType.RecordFound;
+                    serviceResponse.Response = (int)ResponseType.Ok;
+                    serviceResponse.Success = true;
+                }
+                else
+                {
+                    serviceResponse.Message = MessaageType.NoRecordFound;
+                    serviceResponse.Response = (int)ResponseType.NoConnect;
+                    serviceResponse.Success = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Success = false;
+                serviceResponse.Response = (int)ResponseType.InternalServerError;
+                serviceResponse.Message = MessaageType.FailureOnException;
+            }
+            return serviceResponse;
+        }
+
         public async Task<ServiceResponse<GetDesignationDto>> GetDesignationById(Guid designationId)
         {
             ServiceResponse<GetDesignationDto> serviceResponse = new ServiceResponse<GetDesignationDto>();
